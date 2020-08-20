@@ -138,7 +138,7 @@ mysql> select * from CLUSTER_INFO;
 后续查看其他两位同学的作业，还有其他思路：
 
 1. 修改 TiDB : `server/conn.go` 。 参考：[wangcy6](https://github.com/wangcy6/leetcode/blob/master/study/TiDB/weeky1.md)
-2. 修改 TiDB : `store/tikv/txn`。 参考 [](https://elon.fun/posts/hptidb-hello-transaction)
+2. 修改 TiDB : `store/tikv/txn`。 参考 [高性能TiDB课程系列 - week 1](https://elon.fun/posts/hptidb-hello-transaction)
 
 第二篇资料里提到的PingCAP博客中给出的分布式事务流程表，也值得参考：
 
