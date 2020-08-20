@@ -116,8 +116,10 @@ TiDB 的悲观锁实现的原理确实如此，在一个事务执行 DML (UPDATE
 
 注： 启动TiKV的时候需要修改OS支持的最大文件数
 
-> sudo launchctl limit maxfiles 100000 500000
-> ulimit -S -n 82920
+```
+$ sudo launchctl limit maxfiles 100000 500000
+$ ulimit -S -n 82920
+```
 
 TiKV 目前要求最大文件数为 82920
 
