@@ -114,7 +114,14 @@ TiDB 的悲观锁实现的原理确实如此，在一个事务执行 DML (UPDATE
   --log-file=tidb1.log &
 ```
 
-使用 mysql 客户端进行测试：
+注： 启动TiKV的时候需要修改OS支持的最大文件数
+
+> sudo launchctl limit maxfiles 100000 500000
+> ulimit -S -n 82920
+
+TiKV 目前要求最大文件数为 82920
+
+接下来使用 mysql 客户端进行测试：
 
 TiDB 默认端口为 4000:
 
