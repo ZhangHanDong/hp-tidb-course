@@ -1,0 +1,1 @@
+使用 李逸龙 同学的[Dockerfile](https://github.com/dragonly/hp-tidb-course/blob/master/week1/run/Dockerfile)，略有修改。

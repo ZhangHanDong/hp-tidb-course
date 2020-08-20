@@ -69,7 +69,7 @@ TiDB 的悲观锁实现的原理确实如此，在一个事务执行 DML (UPDATE
 
 经历的坑：
 
-1.使用 李逸龙 同学的Dockerfile发现，清华源的Rustup不支持 Nightly Rust 2020-7-1 （也许是从源里删掉了）。换成 2020-7-10，又发现tikv的protobuf依赖库报错。
+1.使用 李逸龙 同学的[Dockerfile](https://github.com/dragonly/hp-tidb-course/blob/master/week1/run/Dockerfile)发现，清华源的Rustup不支持 Nightly Rust 2020-7-1 （也许是从源里删掉了）。换成 2020-7-10，又发现tikv的protobuf依赖库报错。
 2. 换回中科大源，网络不稳定，陆陆续续编译了三天，终于装好了nightly 2020-7-1。
 3. Tikv 跑起来，发现硬盘又不够用了 。。。才发现是 Debug 模式编译，然后使用release 模式编译，TiKV 编译文件才缩减，硬盘凑合够用」。
 4. 之前未修改GOPROXY 为国内源，换了两个梯子都不行，还以为梯子坏了。
