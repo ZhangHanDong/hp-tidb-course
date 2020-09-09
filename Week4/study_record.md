@@ -26,57 +26,57 @@
 
  2017 年末开始，TiDB 走上了向量化执行引擎的道路，主要做了下面三个优化，取得了不错的性能提升：●一是将数据在 TiDB 内存中的布局，从行式改成了列式存储，见​PR/4856●二是将 Volcano 按行迭代的模型改成了按批（1024 行为一批）迭代，见​PR/5178●三是对部分算子的执行进行了一定程度的向量化优化，见​PR/5184完成优化后的 TiDB 2.0 版本和 TiDB 1.0 相比，大部分 TPC-H Query 的性能都有了数量级的提升，详细的性能对比测试可参考​TiDB TPC-H 50G Performance Test Report​。
 
-- [img](../imgs/week4/vec1.png)
-- [img](../imgs/week4/vec2.png)
+- ![img](../imgs/week4/vec1.png)
+- ![img](../imgs/week4/vec2.png)
 
 Merge Join 优化
 
-- [img](../imgs/week4/join1.png)
-- [img](../imgs/week4/join2.png)
+- ![img](../imgs/week4/join1.png)
+- ![img](../imgs/week4/join2.png)
 
 Hash Join 优化
 
-- [img](../imgs/week4/hashjoin1.png)
-- [img](../imgs/week4/hashjoin2.png)
+- ![img](../imgs/week4/hashjoin1.png)
+- ![img](../imgs/week4/hashjoin2.png)
 
 
 NestedLoop Apply 优化
 
-- [img](../imgs/week4/nestedloop_apply1.png)
-- [img](../imgs/week4/nestedloop_apply2.png)
-- [img](../imgs/week4/nestedloop_apply3.png)
-- [img](../imgs/week4/nestedloop_apply4.png)
+- ![img](../imgs/week4/nestedloop_apply1.png)
+- ![img](../imgs/week4/nestedloop_apply2.png)
+- ![img](../imgs/week4/nestedloop_apply3.png)
+- ![img](../imgs/week4/nestedloop_apply4.png)
 
 
 Stream Aggregate 优化
 
-- [img](../imgs/week4/stream1.png)
+- ![img](../imgs/week4/stream1.png)
 
 
 Hash Aggregate 优化
 
-- [img](../imgs/week4/hash1.png)
+- ![img](../imgs/week4/hash1.png)
 
 滑动窗口优化
 
-- [img](../imgs/week4/sliding1.png)
-- [img](../imgs/week4/sliding2.png)
-- [img](../imgs/week4/sliding3.png)
+- ![img](../imgs/week4/sliding1.png)
+- ![img](../imgs/week4/sliding2.png)
+- ![img](../imgs/week4/sliding3.png)
 
 inline projection
 
-- [img](../imgs/week4/inline.png)
+- ![img](../imgs/week4/inline.png)
 
 内置函数 in 性能优化
 
-- [img](../imgs/week4/in.png)
-- [img](../imgs/week4/in2.png)
+- ![img](../imgs/week4/in.png)
+- ![img](../imgs/week4/in2.png)
 
 
 chunk RPC
 
-- [img](../imgs/week4/chunk.png)
-- [img](../imgs/week4/chunk2.png)
+- ![img](../imgs/week4/chunk.png)
+- ![img](../imgs/week4/chunk2.png)
 
 
 
